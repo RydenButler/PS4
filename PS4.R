@@ -10,7 +10,7 @@ library(htmltab)
 # store url
 wikiURL <- 'https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin'
 
-# create objecy containing scraped tables
+# create object containing scraped tables
 temp <- wikiURL %>% 
   read_html %>%
   html_nodes("table")
